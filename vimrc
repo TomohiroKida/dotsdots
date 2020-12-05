@@ -1,3 +1,5 @@
+syntax on
+
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 cnoremap <C-n> <Down>

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 cat README.md
-
-ln -s bashrc ~/.bashrc
-ln -s emacs ~/.emacs
-ln -s inputrc ~/.inputrc
-ln -s screenrc ~/.screenrc
-ln -s tmux.conf ~/.tmux.conf
-ln -s vimrc ~/.vimrc
+here=`pwd`
+ln -sf ${here}/bashrc ~/.bashrc
+ln -sf ${here}/emacs ~/.emacs
+ln -sf ${here}/inputrc ~/.inputrc
+ln -sf ${here}/screenrc ~/.screenrc
+ln -sf ${here}/tmux.conf ~/.tmux.conf
+ln -sf ${here}/vimrc ~/.vimrc
