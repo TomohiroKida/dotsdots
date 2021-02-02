@@ -1,5 +1,7 @@
 bashrc
-bash_local
+emacs
 inputrc
+screenrc
+tmux.conf
 vimrc
-cshrc
+zshrc

@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/bin/zsh
 
 cat README.md
 here=`pwd`
-ln -sf ${here}/bashrc ~/.bashrc
-ln -sf ${here}/emacs ~/.emacs
-ln -sf ${here}/inputrc ~/.inputrc
-ln -sf ${here}/screenrc ~/.screenrc
-ln -sf ${here}/tmux.conf ~/.tmux.conf
-ln -sf ${here}/vimrc ~/.vimrc
+ln -snf ${here}/bashrc    ~/.bashrc
+ln -snf ${here}/emacs     ~/.emacs
+ln -snf ${here}/inputrc   ~/.inputrc
+ln -snf ${here}/screenrc  ~/.screenrc
+ln -snf ${here}/tmux.conf ~/.tmux.conf
+ln -snf ${here}/vimrc     ~/.vimrc
+ln -snf ${here}/zshrc     ~/.zshrc

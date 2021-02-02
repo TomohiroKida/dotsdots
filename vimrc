@@ -13,6 +13,8 @@ nnoremap k gk
 
 set autoindent
 set tabstop=4
+set expandtab
+set shiftwidth=4
 
 "set list
 "set listchars=tab:>>,trail:-,
