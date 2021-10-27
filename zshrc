@@ -20,8 +20,8 @@ compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 
-# home brew in Apple Silicon
-export PATH=$PATH:/opt/homebrew/bin
+# zshrc local file
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # valid color
 autoload -Uz colors

@@ -9,6 +9,7 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias sl='ls'
 alias x=exit
+alias readlink=greadlink
 
 # dont overwrite using redirect
 set -o noclobber
@@ -23,3 +24,4 @@ export TERM='xterm-256color'
 # 00 invalid
 #PS1='\[\e[0;31m\]'
 #export PS1
+. "$HOME/.cargo/env"

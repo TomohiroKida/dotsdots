@@ -18,7 +18,7 @@ attrcolor b ".I"
 # Background-color-erase
 defbce on           
 # Change Default size of scroll buffer 
-defscrollback 32000 
+defscrollback 50000 
 # For 256 color
 termcapinfo xterm* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' 
 
@@ -31,12 +31,11 @@ maptimeout 0
 #            = Change specified sets
 #            %{[Specify Attribute] [Back Color][Front Color]}
 #
-setenv HS "$HS %-w"           # active windows 's num and title
-setenv HS "$HS%n"             # window num
-setenv HS "$HS %t"            # window title
-setenv HS "$HS%+w "           # non-active windows 's num and title
-setenv HS "$HS%-0<%="         # set from right 0
-setenv HS "$HS%Y-%m-%d-%D "
-setenv HS "$HS%02c"        # HH:MM 24 hours
+setenv HS "$HS%{= kG}[ %{G}%H %{g}]" # [ host ]
+setenv HS "$HS[%= %{= kw}%?%-Lw%?" # [ 
+setenv HS "$HS%{r}(%{W}%n*%f%t%?(%u)%?%{r})" #  
+setenv HS "$HS%{w}%?%+Lw%?%? %= %{g}]" # ]
+setenv HS "$HS[%{B} %Y-%m-%d %{W}%c %{g}]" # [ y-m-d time ]
 hardstatus alwayslastline "$HS"
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%? %= %{g}][%{B} %m/%d %{W}%c %{g}]'
 hardstatus off

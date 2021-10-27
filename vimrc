@@ -12,9 +12,9 @@ nnoremap j gj
 nnoremap k gk
 
 set autoindent
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 
 "set list
 "set listchars=tab:>>,trail:-,
@@ -38,4 +38,4 @@ set rulerformat=%20(%l\ %c%V%)
 set nrformats+=alpha
 
 set background=dark
-colorscheme ron
+"colorscheme ron
